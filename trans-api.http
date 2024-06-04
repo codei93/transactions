@@ -1,0 +1,6 @@
+@trans_api_HostAddress = http://localhost:5004
+
+GET {{trans_api_HostAddress}}/auth/
+Accept: application/json
+
+###

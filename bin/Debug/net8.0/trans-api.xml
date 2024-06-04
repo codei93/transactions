@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>trans-api</name>
+    </assembly>
+    <members>
+        <member name="M:trans_api.Controllers.AnalysisController.GetTransactionsByYear(System.Int32)">
+            <summary>
+            The endpoint retrieves the total monthly transactions by year of authenticated user
+            </summary>
+            <param name="year" example="2024">The year of transactions</param>
+        </member>
+        <member name="M:trans_api.Controllers.AnalysisController.GetSumDeposits">
+            <summary>
+            The endpoint retrieves the total sum of deposits of authenticated user
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.AnalysisController.GetSumWithdraws">
+            <summary>
+            The endpoint retrieves the total sum of withdraws
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.AnalysisController.GetCountUsers">
+            <summary>
+            The endpoint retrieves the total number of users 
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.AuthController.Login(trans_api.DTOs.AuthDTO.LoginOTD)">
+            <summary>
+            The endpoint logs in a user.
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.AuthController.Register(trans_api.DTOs.AuthDTO.RegisterOTD)">
+            <summary>
+            The endpoint registers/creates the user.
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.AuthController.UpdatePassword(trans_api.DTOs.UserDTO.UpdatedPasswordOTD)">
+            <summary>
+            The endpoint enable authenticated user to change his/her password.
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.RolesController.CreateRole(trans_api.DTOs.RoleDTO.CreateRoleDTO)">
+            <summary>
+            The endpoint creates a role
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.RolesController.GetRoleById(System.Int32)">
+            <summary>
+            The endpoint gets a role by Id
+            </summary>
+            <param name="id" example="1">Id of the role</param>
+        </member>
+        <member name="M:trans_api.Controllers.RolesController.GetRoles">
+            <summary>
+            The endpoint gets all roles
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.RolesController.UpdateRole(System.Int32,trans_api.DTOs.RoleDTO.UpdateRoleDTO)">
+            <summary>
+            The endpoint updates a role by Id
+            </summary>
+            <param name="id" example="1">Id of the role</param>
+        </member>
+        <member name="M:trans_api.Controllers.RolesController.DeleteRole(System.Int32)">
+            <summary>
+            The endpoint deletes a role by Id.
+            </summary>
+            <param name="id" example="1">Id of the role</param>
+        </member>
+        <member name="M:trans_api.Controllers.TransactionsController.CreateTransaction(trans_api.DTOs.TransactionDTO.CreateTransactionOTD)">
+            <summary>
+            The endpoint creates a transaction
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.TransactionsController.GetTransactionById(System.Int32)">
+            <summary>
+            The endpoint gets a transaction by Id
+            </summary>
+            <param name="id" example="1">Id of the transaction</param>
+        </member>
+        <member name="M:trans_api.Controllers.TransactionsController.GetTransactions">
+            <summary>
+            The endpoint gets all transactions
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.TransactionsController.UpdateTransaction(System.Int32,trans_api.DTOs.TransactionDTO.UpdateTransactionOTD)">
+            <summary>
+            The endpoint updates a transaction by Id
+            </summary>
+            <param name="id" example="1">Id of the transaction</param>
+        </member>
+        <member name="M:trans_api.Controllers.TransactionsController.DeleteTransaction(System.Int32)">
+            <summary>
+            The endpoint deletes a transaction by Id
+            </summary>
+            <param name="id" example="1">Id of the transaction</param>
+        </member>
+        <member name="M:trans_api.Controllers.UsersController.GetUserById(System.Int32)">
+            <summary>
+            The endpoint gets a user by Id
+            </summary>
+            <param name="id" example="1">Id of the user</param>
+        </member>
+        <member name="M:trans_api.Controllers.UsersController.GetUserByUsername(System.String)">
+            <summary>
+            The endpoint gets a user by Username
+            </summary>
+            <param name="username" example="aggrey">username of the user</param>
+        </member>
+        <member name="M:trans_api.Controllers.UsersController.GetUsers">
+            <summary>
+            The endpoint gets all users
+            </summary>
+        </member>
+        <member name="M:trans_api.Controllers.UsersController.UpdateUser(System.Int32,trans_api.DTOs.UserDTO.UpdateUserOTD)">
+            <summary>
+            The endpoint updates a user by Id
+            </summary>
+            <param name="id" example="1">Id of the user</param>
+        </member>
+        <member name="M:trans_api.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            The endpoint deletes a user by Id
+            </summary>
+            <param name="id" example="1">Id of the user</param>
+        </member>
+        <member name="T:trans_api.Migrations.first">
+            <inheritdoc />
+        </member>
+        <member name="M:trans_api.Migrations.first.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:trans_api.Migrations.first.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:trans_api.Migrations.first.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:trans_api.Migrations.second">
+            <inheritdoc />
+        </member>
+        <member name="M:trans_api.Migrations.second.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:trans_api.Migrations.second.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:trans_api.Migrations.second.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserLogin200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.User404Response.StatusCode">
+            <example>404</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.User404Response.Message">
+            <example>A user with the specified Username was not found.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserUpdated200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserUpdated200Response.Message">
+            <example>User has been updated.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserDeleted200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserDeleted200Response.Message">
+            <example>User has been deleted.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.User400Response.StatusCode">
+            <example>400</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.User400Response.Message">
+            <example>Bad request, .</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserRegistration200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserRegistration200Response.Message">
+            <example>User has been created.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserRegistration400Response.StatusCode">
+            <example>400</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserRegistration400Response.Message">
+            <example>Bad request. A user with such details already exists.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserPassword200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserPassword200Response.Message">
+            <example>User password has been updated.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserPasswordResponse.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserPasswordResponse.Message">
+            <example>Password Updated.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserPassword400Response.StatusCode">
+            <example>400</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserPassword400Response.Message">
+            <example>Bad request. Current password is not the same as your old password.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.UserGetOne200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleCreate200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleCreate200Response.Message">
+            <example>Role has been created.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleGetOne200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleUpdate200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleUpdate200Response.Message">
+            <example>Role has been updated.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleDelete200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleDelete200Response.Message">
+            <example>Role has been deleted.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Role404Response.StatusCode">
+            <example>400</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Role404Response.Message">
+            <example>A role with the specified Id was not found.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleCreate400Response.StatusCode">
+            <example>400</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleCreate400Response.Message">
+            <example>Bad request. A Role Name with such details already exists.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleUpdate400Response.StatusCode">
+            <example>400</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.RoleUpdate400Response.Message">
+            <example>Bad Request. Role Id does not match.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.TransactionCreate200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.TransactionCreate200Response.Message">
+            <example>Transaction has been created.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.TransactionUpdate200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.TransactionUpdate200Response.Message">
+            <example>Transaction has been updated.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.TransactionDelete200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.TransactionDelete200Response.Message">
+            <example>Transaction has been Deleted.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Transaction404Response.StatusCode">
+            <example>404</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Transaction404Response.Message">
+            <example>A transaction with the specified Id was not found.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.TransactionGetOne200Response.StatusCode">
+            <example>200</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Transaction400Response.StatusCode">
+            <example>400</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Transaction400Response.Message">
+            <example>Bad request. Transaction Id does not match.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Response401.StatusCode">
+            <example>401</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Response401.Message">
+            <example>Authorization information is missing or invalid.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Response403.StatusCode">
+            <example>403</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Response403.Message">
+            <example>Authentication information is missing or invalid.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Response500.StatusCode">
+            <example>500</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Response500.Message">
+            <example>Unexepected error occurred while processing your request.</example>
+        </member>
+        <member name="P:trans_api.Swagger.ResponseExamples.Response500.Detailed">
+            <example>String.</example>
+        </member>
+    </members>
+</doc>
